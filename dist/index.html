@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Cj's Joint</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-Bjv_TM-v.ico">
+    <script type="module" crossorigin src="/assets/index-DJ7CPBFn.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-B3ckmgcf.css">
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header-section">
+      <h1>Cj's Joint</h1>
+      <p class="description">The best burgers and pizzas in town</p>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+      <!-- Menu Items goes here -->
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart" id="cart">
+      <h2 class="cart-title">Your order</h2>
+      <div id="cart-items">
+        <!-- cart item goes here -->
+      </div>
+
+      <div class="discountButtons">
+        <input
+          name="discount"
+          type="text"
+          placeholder="discount"
+          id="discountInput"
+      />
+        <button type="submit" class="applydiscountbtn" id="applyDiscountBtn">
+          Apply
+        </button>
+      </div>
+
+      <div class="total_line_item">
+        <h3 class="item_name">Total Price</h3>
+        <p class="total_item_price" id="total_item_price"></p>
+      </div>
+      <button class="complete-order-btn" id="complete-order-btn">
+        Complete order
+      </button>
+    </section>
+
+    <!-- Card Details Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-close-btn-container">
+        <button class="modal-close-btn" id="modal-close-btn">X</button>
+      </div>
+      <h2>Enter card details</h2>
+      <form id="creditCardForm">
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          aria-label="Name"
+          pattern="[a-zA-Z\s]+"
+          required
+      />
+        <input
+          type="number"
+          id="cardNumber"
+          name="cardNumber"
+          placeholder="Enter card number"
+          aria-label="Card number"
+          pattern="\d{1,12}"
+          required
+        />
+        <input
+          type="text"
+          name="cvv"
+          placeholder="Enter CVV"
+          aria-label="CVV Number"
+          pattern="\d{1,3}"
+          required
+        />
+        <button type="submit" class="pay-btn">Pay</button>
+      </form>
+    </div>
+
+    <!-- Star Rating -->
+    <div id ="rating-message" class="rating-message">
+      <p>Rate your experience!</p>
+    <div id="rating" class="rating">
+      <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars">★</label>
+      <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">★</label>
+      <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">★</label>
+      <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">★</label>
+      <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">★</label>
+    </div>
+    </div>
+
+    <!-- Discount Popup -->
+    <div id="discountPopup" class="discountPopup">
+      <h2 class="discount_title">5% Discount Off today!</h2>
+      <p class="discount_description">Use Code: discount</p>
+      <button id="closebtn">Close</button>
+    </div>
+    <!-- Backdrop for Card Details Modal -->
+    <div id="backdrop" class="backdrop"></div>
+  </body>
+</html>
