@@ -18,25 +18,26 @@ body {
 
 .header-section {
   background-image: url("/images/burger-joint.jpg");
+  max-width: 100%;
   background-size: cover;
   background-position: 0px -65px;
   color: white;
   padding: 35px;
-  width: 400px;
+  width: 72.3%;
   margin: 0 auto;
   border-radius: 20px 20px 0 0;
-  box-shadow: 0px 0px 15px 1px #c9760a;
+  box-shadow: 0px 0px 15px 1px #ffffff;
 }
 
 .menu {
-  height: 550px;
-  width: 400px;
+  max-height: 100%;
+  width: 72.3%;
   padding: 60px;
   margin: 0 auto;
   background-color: rgb(211, 211, 211);
   border-radius: 0 0 20px 20px;
   position: relative;
-  box-shadow: 0px 0px 15px 1px #c9760a;
+  box-shadow: 0px 0px 15px 1px #ffffff;
 }
 
 div.menu-item {
@@ -62,8 +63,8 @@ div.menu-item {
 }
 
 .cart {
-  width: 400px;
-  height: 390px;
+  width: 72.3%;
+  max-height: 100%;
   padding: 46px;
   margin: 0 auto;
   background-color: rgb(211, 211, 211);
@@ -72,6 +73,7 @@ div.menu-item {
   border-radius: 20px 20px 20px 20px;
   position: relative;
   bottom: 30px;
+  box-shadow: 0px 0px 15px 1px #ffffff;
 }
 
 .cart-line-item {
@@ -105,6 +107,7 @@ div.menu-item {
 
 .modal h2 {
   font-size: 23px;
+  font-weight: normal;
 }
 
 .backdrop {
@@ -127,8 +130,8 @@ div.menu-item {
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #fcd34d;
-  color: rgb(0, 0, 0);
+  background-color: #93fc4d;
+  color: #3a75db;
   width: 270px;
   height: 200px;
   padding: 25px;
@@ -172,9 +175,9 @@ input {
   align-items: center;
   height: 150px;
   width: 350px;
-  background-color: #c9760a;
-  color: whitesmoke;
-  font-weight: 600;
+  background-color: #71ce33;
+  color: #3a75db;
+  /* font-weight: 600; */
   font-size: 2rem;
   border-radius: 5px;
   box-shadow: 0px 0px 20px 1px #373737;
@@ -185,7 +188,7 @@ input {
 h1 {
   margin-right: 5px;
   font-size: 30px;
-  color: #d7b623;
+  color: #ffffff;
   text-shadow: #000000 3px 1px 2px;
 }
 
@@ -198,19 +201,21 @@ h2 {
 .header-section h1 {
   font-family: "friednuget";
   font-size: 55px;
-  color: #e8901d;
+  color: #ffffff;
   text-shadow: #000000 3px 2px 2px;
   display: flex;
   justify-content: space-around;
+  font-weight: normal;
 }
 
 .header-section p {
   font-family: "friednuget";
   font-size: 28px;
-  color: #e8901d;
+  color: #ffffff;
   text-shadow: #000000 3px 1px 1px;
   display: flex;
   justify-content: space-around;
+  font-weight: normal;
 }
 
 .description {
@@ -230,6 +235,7 @@ h2 {
   margin-top: -5px;
   font-size: 20px;
   font-family: "friednuget";
+  font-weight: normal;
 }
 
 .item-ingredients {
@@ -244,7 +250,7 @@ h2 {
 .total_item_price {
   margin: 5px 0px 0px 12px;
   font-size: 16px;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-family: "friednuget";
 }
 
@@ -269,11 +275,12 @@ h2 {
 
 .discount_description {
   font-size: 1.6rem;
+  color: #3a75db;
 }
 
 /* Buttons */
 #closebtn {
-  background-color: #fff000;
+  background-color: #ffffff;
   border-radius: 12px;
   color: #000;
   cursor: pointer;
@@ -294,7 +301,8 @@ h2 {
 #closebtn:not(:disabled):hover,
 #closebtn:not(:disabled):focus {
   outline: 0;
-  background: #f4e603;
+  background: #3a75db;
+  color: whitesmoke;
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
@@ -356,12 +364,12 @@ h2 {
 .add-item-btn {
   width: 30px;
   height: 30px;
-  border: 1.5px solid #e8901d;
+  border: 1.5px solid #848484;
   background: none;
   border-radius: 20px;
   font-size: 1.25rem;
   font-weight: 200;
-  color: #3c3c3c;
+  color: #8d8d8d;
   margin-left: auto;
   margin-top: 10px;
 }
@@ -392,7 +400,7 @@ h2 {
   color: rgb(0, 0, 0);
   font-size: 1rem;
   font-weight: 700;
-  background-color: #fcd34d;
+  background-color: #53fe40;
   border: 2px inset #000000;
   border-radius: 4px;
   margin-top: -30px;
@@ -419,8 +427,24 @@ h2 {
 .discount_title {
   font-size: 2rem;
   margin-top: 0;
+  color: #3a75db;
+  font-weight: normal;
 }
 
 .hidden {
   display: none;
+}
+
+/* Styles for tablets and smaller screens */
+@media (max-width: 100%) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Styles for mobile phones */
+@media (max-width: 100%) {
+  body {
+    font-size: 12px;
+  }
 }
